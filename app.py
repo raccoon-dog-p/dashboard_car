@@ -4,6 +4,7 @@ import numpy as np
 import os
 import pickle
 from eda import run_eda_app as rea
+from ml import run_ml_app
 
 def main():
     st.title('자동차 가격 예측')
@@ -18,5 +19,7 @@ def main():
         st.write('왼쪽의 사이드바에서 선택하세요.')
     elif choice == 'EDA':
         rea()
+    elif choice == 'ML':
+        run_ml_app()
 if __name__ == '__main__':
     main()
